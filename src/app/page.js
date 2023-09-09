@@ -2,9 +2,17 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 
+
+
 function Home() {
 
-  
+  const [down, setdown] = useState(false);
+
+  const toggleLanguage = () =>
+  {
+    setdown(!down);
+  }
+
 
   return (
     <>
@@ -22,21 +30,30 @@ function Home() {
 
       <div className='menu'>
 
-        <Link href='/TravelInfo'>
+        <Link className='travelinfo' href='/TravelInfo'>
           Travel Info
         </Link>
 
-        <Link href='/Weather'>
+        <Link className='weather' href='/Weather'>
           Weather Updates
         </Link>
 
-        <Link  href='/Sign In'>
+        <Link href='/Sign In'>
           <button className='signin'>
             Sign In
           </button>
         </Link>
 
-        
+        <div className="language-drop">
+      <button onClick={toggleLanguage}>En</button>
+      {setdown && (
+        <ul className="lan-dropdown">
+          <li>हिंदी</li>
+          <li>Fr</li>
+          <li>German</li>
+        </ul>
+      )}
+    </div>
 
       </div>
 
