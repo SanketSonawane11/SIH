@@ -143,6 +143,7 @@ function Home() {
 
             </div>
 
+            <button className='more-region'>Explore more</button>
             
 
       </div>
