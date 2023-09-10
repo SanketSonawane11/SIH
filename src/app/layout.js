@@ -1,5 +1,6 @@
 import '../../styles/globals.css'
-import { Inter } from 'next/font/google'
+import { Alfa_Slab_One, Inter, Poppins, Space_Grotesk } from 'next/font/google'
+
 
 const inter = Inter({ subsets: ['latin'] })
 

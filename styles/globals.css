@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allerta+Stencil&family=Big+Shoulders+Stencil+Display:wght@100;200;300;400;500;600;700;800;900&family=Bungee+Inline&family=Bungee+Outline&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&family=Sirin+Stencil&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 *
 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', 'Big Shoulders Stencil Display', 'Alfa Slab One', sans-serif;
 }
 
 .hero-main
@@ -18,6 +17,8 @@
   font-size: 3vw;
   font-family: 'Poppins';
 }
+
+/* Navbar starts */
 
 .navbar
 {
@@ -54,8 +55,7 @@
 
 .menu
 {
-  padding: 1vw 2vw;
-  width: 60vw;
+  width: 45vw;
   height: 98h;
   font-size: 1.2vw;
   font-weight: 600;
@@ -66,7 +66,7 @@
 
 .travelinfo, .weather
 {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .travelinfo:hover, .weather:hover
@@ -91,7 +91,7 @@
 .signin:hover
 {
   scale: 1.1;
-  background-color: rgb(51, 51, 51);
+  background-color: #3F3F3F;
 }
 
 .language-drop
@@ -131,11 +131,256 @@
   padding: 1vw;
 }
 
-/* .lan-dropdown li:hover {
-  background-color: #f0f0f0;
-} */
-
 .language-drop:hover .lan-dropdown {
   display: block;
   transition: all 0.5s ease-in-out;
 }
+
+/* Navbar Ends */
+
+/* Hero section starts */
+
+.hero-section
+{
+  margin: 5vw;
+  height: max-content;
+  width: 48vw; 
+}
+
+h1.line1
+{
+  height: max-content;
+  font-family: 'Big Shoulders Stencil Display', cursive;
+  font-weight: 900;
+  font-size: 6vw;
+}
+
+h1.line2, h1.line3
+{
+  height: max-content;
+  font-family: 'Alfa Slab One';
+  letter-spacing: 0.3vw;
+  font-size: 7vw;
+}
+
+.visit
+{
+  margin: 3vw 0;
+  height: 3.5vw;
+  width: 15vw;
+  font-size: 2vw;
+  color: #fff;
+  font-family: 'Big Shoulders Stencil Display';
+  letter-spacing: 0.25vw;
+  font-weight: 700;
+  background-color: #000;
+  border-radius: 3vw;
+  transition: all 0.2s ease-in-out;
+}
+
+.visit:hover
+{
+  scale: 1.2;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Hero section Ends */
+
+/* Section 2 starts */
+
+.section2
+{
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #F7C913, #F2F2CF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-text
+{
+  width: 48vw;
+  height: max-content;
+  margin: 10vw 5vw;
+}
+
+.welcome-text h1
+{
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.welcome-text span
+{
+  font-size:  6vw;
+}
+
+.welcome-text .desc
+{
+  width: 50vw;
+  font-size: 2.5vw;
+  color: grey;
+  padding: 0 2vw;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.welcome-text .desc:hover
+{
+  background: #fff;
+  border-radius: 1vw;
+  color: rgb(255, 169, 64);
+}
+
+.call-buttons
+{
+  margin: 1vw;
+  width: 25vw;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.call-buttons .journey,.call-buttons .learn
+{
+  width: 10vw;
+  height: 3vw;
+  background: #fff;
+  border-radius: 2vw;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.call-buttons .journey:hover,.call-buttons .learn:hover
+{
+  background: #000;
+  color: #fff;
+  border-radius: 1vw;
+}
+
+.carousel
+{
+  width: 45vw;
+  height: 80vh;
+  margin: 3vw;
+  border-radius: 2vw;
+  background: url(/portrait-kirti-kalla-JRhvllDBhzs-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.carousel:hover
+{
+  background: url(/portrait-ravi-sharma-nTTzGneSnz4-unsplash.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.carousel:active
+{
+  background: url(/sneha-chatterjee-MBsLiGLwIPs-unsplash.jpg) no-repeat center;
+  background-size: cover;
+}
+/* Section 2 ends */
+
+/* Indian regions start */
+
+.regions
+{
+  width: 100vw;
+  height: 50vh;
+  background: #F2F2CF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.regions h1
+{
+  width: 100vw;
+  height: 8vh;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.region-cards
+{
+  width: 100vw;
+  height: 42vw;
+  margin: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rcard
+{
+  width: 18vw;
+  height: 40vh;
+  color: #fff;
+  border-radius: 1vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.North
+{
+  background: url(/staybg.jpg) no-repeat bottom;
+  background-size: cover;
+}
+
+.North:hover
+{
+  background: url(/portrait-shivam-srivastava-pA2PNv2qvXM-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 3.2vw;
+}
+
+.East
+{
+  background: url(/assam.jpg) no-repeat bottom;
+  background-size: cover;
+}
+
+.East:hover
+{
+  background: url(/nagaland.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 3.2vw;
+}
+
+.West
+{
+  background: url(/portraitGreenery.jpg) no-repeat bottom;
+  background-size: cover;
+}
+
+.West:hover
+{
+  background: url(/gujarat.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 3.2vw;
+}
+
+.South
+{
+  background: url(/south.jpg) no-repeat bottom;
+  background-size: cover;
+}
+
+.South:hover
+{
+  background: url(/kerala.jpg) no-repeat center;
+  background-size: cover;
+  font-size: 3.2vw;
+}
+
+/* Indian regions ends */
