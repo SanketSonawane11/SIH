@@ -143,8 +143,77 @@ function Home() {
 
             </div>
 
-            <button className='more-region'>Explore more</button>
+            <button className='more-region'>Explore more +</button>
             
+
+      </div>
+
+      <div className='festivals'>
+
+            <h1> Upcoming Festivals & Events </h1>
+
+            <div className='upcoming-content'>
+
+              <div className='festivals-data'>
+
+                <h1> Festivals </h1>
+
+                <div className='upcoming-cards festival-cards'>
+
+                  <div className='card1 ganpati'>
+
+                    <content>
+                    <h1> Ganesh Chathurthi </h1>
+                    It's a time of grand processions, intricate decorations, and delicious sweets, making it a captivating entry point into India's rich traditions.
+                    </content>
+
+                  </div>
+
+                  <div className='card1'>
+                    
+                  </div>
+
+                  <div className='card1'>
+                    
+                  </div>
+
+                  <div className='card1'>
+                    
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className='events-data'>
+
+                <h1> Events </h1>
+
+                <div className='upcoming-cards events-cards'>
+
+                  <div className='card1'>
+                    
+                  </div>
+
+                  <div className='card1'>
+                    
+                  </div>
+
+                  <div className='card1'>
+                    
+                  </div>
+
+                  <div className='card1'>
+                    
+                  </div>
+
+                  
+
+                </div>
+
+              </div>
+
+            </div>
 
       </div>
 
