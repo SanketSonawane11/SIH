@@ -8,6 +8,11 @@
   font-family: 'Nunito', 'Big Shoulders Stencil Display', 'Alfa Slab One', sans-serif;
 }
 
+body
+{
+  background-color: #F2F2CF;
+}
+
 .hero-main
 {
   width: 100vw;
@@ -501,7 +506,11 @@ button.more-region:hover
 /* Festivals section ends */
 
 
+/* WEATHER PAGE */ /*NEW PAGE*/ /*STARTS*/
 
+
+
+/* WEATHER PAGE */ /*NEW PAGE*/ /*ENDS*/
 
 /* Misc */
 ::-webkit-scrollbar

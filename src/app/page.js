@@ -1,13 +1,12 @@
 'use client'
+import axios from 'axios';
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
-
+import Navbar from '../../components/Navbar';
 
 
 
 function Home() {
-
-  const [down, setdown] = useState(false);
 
   // const texts = ["India's heart", "India's Culture", "India"];
   // const [textIndex, setTextIndex] = useState(0);
@@ -39,56 +38,13 @@ function Home() {
   // }, [textType, texts, textIndex]);
 
 
-  const toggleLanguage = () =>
-  {
-    setdown(!down);
-  }
-
-
   return (
     <>
     
       <div className='hero-main'>
 
 
-            <div className='navbar'>
-
-          <div className='logo'>
-
-            Safar
-
-          </div>
-
-          <div className='menu'>
-
-            <Link className='travelinfo' href='/TravelInfo'>
-              Travel Info
-            </Link>
-
-            <Link className='weather' href='/Weather'>
-              Weather Updates
-            </Link>
-
-            <Link href='/Sign In'>
-              <button className='signin'>
-                Sign In
-              </button>
-            </Link>
-
-            <div className="language-drop">
-          <button onClick={toggleLanguage}>En</button>
-          {setdown && (
-            <ul className="lan-dropdown">
-              <li>हिंदी</li>
-              <li>Fr</li>
-              <li>German</li>
-            </ul>
-          )}
-        </div>
-
-          </div>
-
-            </div>
+            <Navbar />
 
             <div style={{ fontFamily: 'Alfa Slab One' }} className='hero-section'>
 
