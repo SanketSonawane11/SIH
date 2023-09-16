@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import Right from './Right';
 
 export default function Navbar() {
 
@@ -32,7 +33,7 @@ export default function Navbar() {
 
           <div className='menu'>
 
-            <Link className='travelinfo' href='/TravelInfo'>
+            <Link className='travelinfo' href='/TripPlanner'>
               Travel Info
             </Link>
 
@@ -40,22 +41,29 @@ export default function Navbar() {
               Weather Updates
             </Link>
 
-            <Link href='/Sign In'>
+            <Link className='pppcalci' href='https://www.chrislross.com/PPPConverter/' >
+              Value Calculator
+            </Link>
+
+            <Link  href='/SignIn'>
               <button className='signin'>
                 Sign In
               </button>
             </Link>
 
-            <div className="language-drop">
-          <button onClick={toggleLanguage}>En</button>
-          {setdown && (
-            <ul className="lan-dropdown">
-              <li>हिंदी</li>
-              <li>Fr</li>
-              <li>German</li>
-            </ul>
-          )}
-        </div>
+          <div className="language-drop">
+            {/* <button onClick={toggleLanguage}>En</button>
+            {setdown && (
+              <ul className="lan-dropdown">
+                <li>हिंदी</li>
+                <li>Fr</li>
+                <li>German</li>
+              </ul>
+            )} */}
+
+            <Right />
+
+          </div>
 
           </div>
 
