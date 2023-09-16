@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import Nav from '../../../components/signInNav';
 import axios from 'axios';
 import Loader from '../../../components/Spinner'
+import Navbar from '../../../components/Navbar';
 
 const page = () => {
   const [resData, setResData] = useState('');
@@ -26,7 +26,7 @@ const page = () => {
   };
   return (
     <>
-      <Nav />
+      <Navbar />
       <div className="mainTrip">
         <div className="queryWrapper">
           <div className="queryTrip">
